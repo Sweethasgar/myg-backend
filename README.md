@@ -1,7 +1,7 @@
 # myg-backend
  These all are the api endpoints
  
- project is developed with djangorestframework
+ This project is developed with djangorestframework
 
 
   
