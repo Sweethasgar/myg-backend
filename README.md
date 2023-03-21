@@ -2,25 +2,26 @@
 These all are the api endpoints
 
     # to register and get the token
-    path("signup",views.userRegistration.as_view()),
+   ->signup
     # to access token for login
-    path('token/',MyTokenObtainPairView.as_view(), name='token_obtain_pair'),
+    ->token/
     # to view the token profile
-    path("profile",views.userProfileView.as_view()),
+    ->profile
     # To get all products
-    path("all/products",views.ProductViews.as_view()),
+    ->all/products
     # to get detail of product , add product and delete product
-    path("product/<int:pk>",views.ProductDetail.as_view()),
+    ->product/<int:pk>
     # to get list of category and add category
-    path("category",views.CategoryList.as_view()),
+    ->category
     # category detail view and products based on category
-    path("category/<str:name>",views.CategoryDetailAPIView.as_view()),
+    ->category/<str:name>
     # add review and get review
-    path("product/review/<int:pk>",views.ReviewViewApi.as_view()), 
+    ->product/review/<int:pk> 
     # to add products to cart
-    path("add/cart/<int:pk>",views.AddtoCart.as_view()),
+    ->add/cart/<int:pk>
     # to view whole cart
-    path("viewcart",views.CartListView.as_view()),
+    ->viewcart
     #To order the items
-    path("orders/<str:pk>",views.OrdersView.as_view()),
-    # path("orderall",views.OrderAllView.as_view()),
+    ->orders/<str:pk>
+    #to view cart items
+    ->cart/items
