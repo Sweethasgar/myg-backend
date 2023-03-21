@@ -1,7 +1,7 @@
 # myg-backend
 These all are the api endpoints
 
- # to register and get the token
+    # to register and get the token
     path("signup",views.userRegistration.as_view()),
     # to access token for login
     path('token/',MyTokenObtainPairView.as_view(), name='token_obtain_pair'),
